@@ -1,0 +1,11 @@
+# Ignore user-specific configuration and sensitive keys
+js/config.js
+
+# Node artifacts
+node_modules/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
