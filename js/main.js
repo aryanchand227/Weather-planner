@@ -1,8 +1,6 @@
 import { state } from "./state.js";
 import { fetchCurrentWeather, fetchForecast } from "./api.js";
-import {
-    processForecast, convertTemperature,
-    convertWind } from "./utils.js";
+import { processForecast } from "./utils.js";
 import {
     renderCurrentWeather,
     renderForecast,
@@ -14,9 +12,12 @@ import {
 } from "./ui.js";
 import { getPackingSuggestions } from "./packing.js";
 import { applyTheme } from "./theme.js";
+import { getApiKey } from "./config.js";
+
 const cityInput = document.getElementById("cityInput");
 const searchBtn = document.getElementById("searchBtn");
 const unitBtn = document.getElementById("unitBtn");
+
 unitBtn.addEventListener("click", () => {
 
     state.unit =
