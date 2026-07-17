@@ -12,7 +12,6 @@ import {
 } from "./ui.js";
 import { getPackingSuggestions } from "./packing.js";
 import { applyTheme } from "./theme.js";
-import { getApiKey } from "./config.js";
 
 const cityInput = document.getElementById("cityInput");
 const searchBtn = document.getElementById("searchBtn");
